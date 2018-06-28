@@ -13,8 +13,7 @@
   </head>
   <body>
     <h1>Health Ping Options</h1>
-    <h2>Stand-Up Interval: <input type="text" id="interval">mins</h2>
-    <input type="submit" id="changeInterval" value="Change Interval">
+    <h2>Stand-Up Interval:</h2>
     <select id="intervalSelect">
       <option value="10000">10 Seconds</option>
       <option value="30000">30 Seconds</option>
@@ -23,6 +22,17 @@
       <option value="120000">2 Minutes</option>
       <option value="3600000">1 Hour</option>
     </select>
+    <input type="submit" id="changeInterval" value="Change Interval">
+    <h2>Sounds: </h2>
+    <label class="switch">
+      <input type="checkbox" id="sounds">
+      <span class="slider round"></span>
+    </label>
+    <h2>Snooze: </h2>
+    <label class="switch">
+      <input type="checkbox" id="snooze">
+      <span class="slider round"></span>
+    </label>
     <!-- build:js scripts/options-vendor.js -->
     <!-- bower:js -->
     <!-- endbower -->
