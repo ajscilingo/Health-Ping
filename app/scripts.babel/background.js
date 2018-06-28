@@ -28,7 +28,7 @@ function sendStandNotification(){
     type: 'basic',
     iconUrl: 'images/icon-48.png',
     title: 'Unplug!',
-    message: "Take a technology timeout!",
+    message: 'Take a technology timeout!',
     requireInteraction: true
   };
   chrome.notifications.create(null, notificationOptions);

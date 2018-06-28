@@ -1,4 +1,4 @@
-body {
+.body {
   padding: 20px;
 }
 
@@ -60,4 +60,37 @@ input:checked + .slider:before {
 
 .button-secondary {
   background: rgb(66, 184, 221); /* this is a light blue */
+}
+
+.health-image {
+	width: 41px;
+	height: 35px;
+}
+
+.health-table {
+	width: 100%;
+	padding: 10px 20px;
+}
+
+.list {
+	text-decoration: none;
+	display: block;
+	padding: 5px 20px;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+.container {
+	margin: 0 auto;
+	width: 500px;
+}
+
+.options_container {
+	margin: 0 auto;
+	width: 80%;
+	height: 60%;
 }
