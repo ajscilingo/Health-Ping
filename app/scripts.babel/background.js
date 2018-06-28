@@ -25,7 +25,7 @@ chrome.runtime.onStartup.addListener(() => {
 function sendStandNotification(){
   let notificationOptions = {
     type: 'basic',
-    iconUrl: 'images/icon-38.png',
+    iconUrl: 'images/icon-48.png',
     title: 'Unplug!',
     message: "Take a technology timeout!",
     requireInteraction: true

@@ -16,10 +16,24 @@ function onChangeInterval(){
     }
 }
 
+/*function onSelectChangeInterval(){
+    let standInterval = document.getElementById('intervalSelect').value;
+    if(standInterval){
+        chrome.storage.sync.set({'interval' : standInterval}, () => {
+            chrome.runtime.getBackgroundPage( (bgpage) => {
+                bgpage.clearNotificationLoop();
+                bgpage.setNoticationLoop(standInterval);
+                close();
+            });
+        })
+    }
+}*/
 
 document.addEventListener('DOMContentLoaded', () => {
     chrome.storage.sync.get('interval', (healthPingOptions) => {
         let standInterval = document.getElementById('interval');
+        //let selectStandInterval = document.getElementById('intervalSelect');
+        //selectStandInterval.value = healthPingOptions.interval;
         standInterval.value = healthPingOptions.interval;
     });
     document.getElementById('changeInterval').addEventListener('click', onChangeInterval);
@@ -28,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function sendStandNotification(){
     let notificationOptions = {
       type: 'basic',
-      iconUrl: 'images/icon-38.png',
+      iconUrl: 'images/icon-48.png',
       title: 'Welcome!',
       message: "Get Ready to Stand!"
     };
