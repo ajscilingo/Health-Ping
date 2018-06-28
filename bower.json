@@ -2,7 +2,9 @@
   "name": "health-ping-extension",
   "private": true,
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "pure": "purecss#^1.0.0"
+  },
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^5.2.0"
