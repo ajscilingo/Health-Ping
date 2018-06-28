@@ -2,7 +2,7 @@
   "name": "Health Ping Extension",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "Reminds Users To Stand Up After Set Interval",
+  "description": "Reminds Users To Take A Technology Break",
   "icons": {
     "16": "images/icon-16.png",
     "128": "images/icon-128.png"
