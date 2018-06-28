@@ -26,8 +26,8 @@ function sendStandNotification(){
   let notificationOptions = {
     type: 'basic',
     iconUrl: 'images/icon-38.png',
-    title: 'Welcome!',
-    message: "Get Ready to Stand!"
+    title: 'Unplug!',
+    message: "Take a technology timeout!"
   };
   chrome.notifications.create(null, notificationOptions);
 }
